@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container py-4">
+    <div class="card">
+      <div class="card-header">
+        <div class="row row-2-col align-items-center">
+          <div class="col text-center">
+            <p>Kasetsart Sriracha</p>
+            <h1>My Name</h1>
+            <p>Some info</p>
+          </div>
+          <div class="col bg-info text-center">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+              alt="Profile"
+              style="width: 150px"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <InfoList />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import InfoList from "./components/InfoList.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    InfoList,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
